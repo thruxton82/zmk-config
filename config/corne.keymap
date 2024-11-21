@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp ESC         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL       &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                              &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -35,7 +35,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &trans      &kp UP            &kp PRINTSCREEN  &kp C_VOL_UP    &kp PLUS   &kp N7  &kp N8      &kp N9  &kp N0    &kp BSPC
+&kp TAB    &trans  &trans      &kp UP            &kp PRINTSCREEN  &kp C_VOL_UP    &kp PLUS   &kp N7  &kp N8      &kp N9  &kp N0    &kp DELETE
 &trans     &trans  &kp LEFT    &kp DOWN          &kp RIGHT        &kp C_VOL_DN    &kp EQUAL  &kp N4  &kp N5      &kp N6  &kp LBKT  &kp RBKT
 &kp LSHFT  &trans  &kp K_PREV  &kp C_PLAY_PAUSE  &kp K_NEXT       &kp C_MUTE      &kp MINUS  &kp N1  &kp N2      &kp N3  &trans    &kp LS(PIPE)
                                &kp LGUI          &trans           &kp SPACE       &kp RET    &kp N0  &kp KP_DOT
@@ -44,7 +44,7 @@
 
         extras {
             bindings = <
-&kp TAB    &trans  &trans  &trans    &trans  &bt BT_SEL 0    &trans     &trans  &trans    &trans  &trans  &kp BSPC
+&kp TAB    &trans  &trans  &trans    &trans  &bt BT_SEL 0    &trans     &trans  &trans    &trans  &trans  &kp DELETE
 &kp LCTRL  &trans  &trans  &trans    &trans  &bt BT_SEL 1    &trans     &trans  &trans    &trans  &trans  &trans
 &kp LSHFT  &trans  &trans  &trans    &trans  &trans          &trans     &trans  &trans    &trans  &trans  &trans
                            &kp LGUI  &trans  &kp SPACE       &kp ENTER  &trans  &kp RALT
@@ -55,7 +55,7 @@
             bindings = <
 &kp TAB  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp A    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
