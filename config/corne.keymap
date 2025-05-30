@@ -10,10 +10,11 @@
 
 / {
     macros {
-        sw_win: alt_tab {
+        sw_win: alt_tab_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp TAB>;
+            bindings = <&macro_press K_LALT K_TAB>, // Press LALT AND TAB
+                       <&macro_release K_LALT K_TAB>; // THEN Release LALT AND TAB
             label = "ALT_TAB";
         };
     };
