@@ -16,7 +16,6 @@
             bindings =
                 <&macro_press K_LALT K_TAB>,
                 <&macro_release K_LALT K_TAB>;
- // THEN Release LALT AND TAB
             label = "ALT_TAB";
         };
     };
