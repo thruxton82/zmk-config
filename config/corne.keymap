@@ -9,18 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        sw_win: alt_tab_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press K_LALT K_TAB>,
-                <&macro_release K_LALT K_TAB>;
-
-            label = "ALT_TAB";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
